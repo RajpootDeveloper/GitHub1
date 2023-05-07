@@ -1,0 +1,46 @@
+<!-- 
+    Important Note: 
+                    matrix(Scale(X), Skew(Y), Skew(X), Scale(Y), Translate(X), Translate(Y))
+ -->
+
+ <!DOCTYPE html>
+
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Perspective&Perspective-Origen</title>
+     <style>
+         .container{
+             width: 500px;
+             height: 500px;
+             border: 2px dashed black;
+             perspective: 800px;
+             /* perspective-origin: top bottom; */
+             perspective-origin: 0% 100%;
+             margin-left: 100px;
+             margin-top: 100px;
+          }
+         .box{
+             width: 250px;
+             height: 150px;
+             background-color: tomato;
+             transform-origin: center center ;
+             transform: rotatex(30deg);
+         }
+         
+     </style>
+ </head>
+ <body>
+     <div class="container">
+     <h2>Perspective & Perspective-Origen</h2>
+     <p></p>
+     <div class="box">
+         AFAQ
+     </div>
+     <p>
+        </p>
+ </div>
+ </body>
+ </html>

@@ -1,0 +1,110 @@
+<!-- 
+    Import.Note: 
+            ::Before, ::After Wali porp. sab ke sath chalti hai bs img tag ke sath istemal nahi ker sakte.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo_Elements</title>
+    <style>
+        /* p::first-letter{
+            color: red;
+            background: yellow;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        li::first-letter{
+            color: red;
+            background: yellow;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        } */
+        /* p::first-line{
+            color: red;
+            background: yellow;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        li::first-line{
+            color: red;
+            background: yellow;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        } */
+        /* p::selection{
+            color: red;
+            background: yellow;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        li::selection{
+            color: red;
+            background: yellow;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        } */
+        /* input::placeholder{
+            color: red;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: lightblue;
+        } */
+        h3::before{
+            content: "Hello";
+            color: red;
+            background-color: pink;
+        }
+        h3::after{
+            content: "Word";
+            color: green;
+            background: lightgreen;
+        }
+        h3:hover::after{
+            content: "";
+            color: none;
+            background: none;
+        }
+    </style>
+</head>
+<body>
+    <h3>Here Before and After</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, dignissimos natus eligendi commodi minima molestias nemo veniam quidem obcaecati sed consequuntur repudiandae deserunt fugit porro illo in molestiae architecto iste.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus facere qui, quibusdam temporibus omnis quas repellat a. Ipsa repellendus natus alias quam delectus architecto debitis ut amet reprehenderit, laborum saepe.</p>
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        
+    </ul>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores ipsa ea officiis dolorem, iure tempore porro facilis quasi vitae mollitia, nobis aperiam, nostrum minima voluptates totam reiciendis cupiditate commodi suscipit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos maxime voluptate, mollitia placeat beatae exercitationem modi recusandae? Accusamus adipisci repudiandae quos pariatur soluta odit, blanditiis earum obcaecati autem perspiciatis. Facilis!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iusto, reiciendis exercitationem dolores autem culpa quae nobis commodi rem consequuntur. Nostrum delectus minima esse earum nemo accusamus eaque excepturi expedita.
+        </p>
+    </div>
+    <form action="index.php">
+        <fieldset>
+            <legend>Enquiry</legend>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" placeholder="First_Name">
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" placeholder="Last_Name"><br><br>
+            <label for="password">Passord</label>
+            <input type="password" name="password" id="password" placeholder="Enter_Your_Password">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter_Email"><br><br>
+            <input type="submit" placeholder="Button" value="Send_Me">
+        </fieldset>
+    </form>
+</body>
+</html>
