@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application_Of_Transforms</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: slategray;
+            margin: 0;padding: 0; 
+        }
+        #wrapper{
+            border: 0px solid black;
+            width: 100%;
+            background-color: white;
+            margin: 0px auto;
+        }
+        #header{
+            background-color: crimson;
+            height: 100px;
+        }
+        #header h1{
+            padding: 30px 0 0 20px;
+            transition: all 1s;
+        }
+        #header h1:hover{
+            transform-origin: 15% 70%;
+            transform: scale(.5) ;
+        }
+        #header h1 a:active{
+            text-shadow: 2px 2px 5px white;
+            color: white;
+        }
+        #header h1 a{
+            text-decoration: none;
+            color: black;
+        }
+        #menu{
+            background-color: lightsalmon;
+
+        }
+        #menu li{
+            display: inline-block;
+        }
+        #menu li a{
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: black;
+        }
+        #menu li a:hover{
+            background-color: black;
+            color: crimson;
+            transition: all, .5s;
+            transform: translateY(10px) scale(1.05);
+            font-size: 1.02em;
+            text-shadow: 3px 3px 5px rgb(170, 4, 38);
+        }
+        #content{
+            width: 85%;
+            min-height: 500px;
+            padding: 20px;
+            float: left;
+            box-sizing: border-box;
+            text-align: justify;
+        }
+      
+        #sidebar{
+            background-color:lightblue;
+            width: 15%;
+            min-height: 500px;
+            float: right ;
+        }
+        #sidebar ul{
+            list-style: none;
+
+
+        }
+        #sidebar ul li{
+            padding: 5px 10px 5px 10px;
+            text-align: center;
+        }
+        #sidebar ul li:hover{
+            background-color: #dc143c;
+            color: white;
+        }
+        #sidebar ul li a:hover{
+            background-color: #dc143c;
+            color: white;
+        }
+        #sidebar a{
+            text-decoration: none;
+            color: black;
+        }
+        #footer{
+            background-color: lightsalmon;
+            text-align: center;
+            clear: both;
+            padding: 5px 10px;
+            
+        }
+        @media screen and (max-width:1000px){
+            #content{
+                width: 75%;
+            }
+            #sidebar{
+                width: 25%;
+            }
+            @media screen and (max-width:550px) {
+                #content{
+                    width: 100%;
+
+                }
+                #sidebar{
+                    width: 100%;
+                }
+                #header h1{
+            padding: 30px 0 0 0px;
+            text-align: center;
+        }
+                
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1><a href="">Mr. AFAQ</a></h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2>Design Basic layout</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quaerat eum, quae unde itaque dignissimos! Dignissimos soluta, sed, ad recusandae accusamus labore odit repellendus placeat asperiores corporis itaque dolorum culpa.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, architecto nihil assumenda, rerum consequuntur laborum quidem voluptatibus inventore facere nam harum? Voluptates obcaecati natus blanditiis dolores sunt et 
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique dolores, molestiae ipsum quibusdam architecto suscipit. Minus doloremque aliquam similique soluta cupiditate quos pariatur ullam nobis, alias quod magnam laboriosam! Cupiditate necessitatibus nobis optio animi corrupti quos laudantium, iusto explicabo quia qui eum laboriosam. Aut, voluptatum libero ullam voluptate nostrum unde molestiae. Velit quas amet tempore nobis unde, aliquid nisi fugiat dolores maxime, ab incidunt corporis blanditiis a voluptatum mollitia magnam veritatis maiores repellat consequuntur iste. Architecto ipsum accusamus ab quas omnis soluta ullam unde eos consectetur quisquam! Odit, nisi itaque. Vero, quidem cupiditate? Dicta mollitia aut error veritatis aspernatur harum commodi distinctio iusto, accusamus cumque beatae nemo iste non voluptate aliquid earum blanditiis minus! Saepe eos autem assumenda aperiam similique? Provident quis nam iure necessitatibus quam distinctio praesentium nihil, atque exercitationem velit saepe minima a temporibus iste accusantium tenetur porro, omnis quia illum. Doloribus repudiandae accusantium amet vitae fugiat a? Corporis repudiandae illum minus nemo ducimus autem itaque asperiores excepturi suscipit in? Reiciendis vel incidunt nisi perferendis molestias laudantium doloremque voluptates fugiat corrupti repudiandae cum iste fugit alias neque perspiciatis eos, ipsam architecto sequi error similique sit molestiae. Quibusdam magni blanditiis at quasi nam enim ratione qui, possimus illum voluptas! maiores doloremque!</p>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li> 
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            yahoobaba@copyright 2018.
+        </div>
+    </div>
+</body>
+</html>

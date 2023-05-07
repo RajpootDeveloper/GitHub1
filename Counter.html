@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body{
+            font: 15px/32px, helvetica;
+            font-size: 15px;
+            counter-reset: my-counter 0;
+        }
+        h2::before{
+            content: "Chapter " counter(my-counter) ":";
+            counter-increment: my-counter 1;
+        }
+    </style>
+</head>
+<body>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi mollitia laboriosam dignissimos numquam magni nam magnam pariatur debitis at asperiores, dolor quas nobis impedit harum? Saepe doloremque facilis necessitatibus!</p>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum delectus quam ad accusamus provident dolores vero tempore enim sint, hic ut, nam quod deleniti non, autem aut ipsum sequi quae.</p>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex iste harum eaque quod magnam voluptatum perferendis consequatur repellendus laudantium asperiores veniam consequuntur, voluptatibus iusto, possimus doloremque, distinctio soluta libero quaerat.</p>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium optio, nam, quam aspernatur eum veniam minima enim obcaecati quis numquam illo id error odit aliquam, ab non animi? Iste, quaerat.</p>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem vitae ratione blanditiis adipisci culpa praesentium explicabo quisquam fugiat laudantium repellendus impedit libero rerum quibusdam provident, natus molestiae magni cum illum.</p>
+</body>
+</html>

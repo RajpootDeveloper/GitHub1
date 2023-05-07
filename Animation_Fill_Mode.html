@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation_Fill_Mode</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: black;
+            margin-left: 20px;
+            animation: sample 2s 2s paused;
+            animation-fill-mode: forwards;
+            /* note:
+                animation-fill-mode: backwards is main animation ka jo delay time hota hai us main ja 0% pe jo values hon gi un pe ja choka hoga, phir delay time pora ho ga then animation start hogi
+                no.2 forwards main animation noral hi start ho gi but is main apni intial state per nahi aay gi balke ke 100% wali Condition main hi rok jay Gi.
+            */
+
+        }
+        .box:hover{
+            animation-play-state: running;
+        }
+        @keyframes sample{
+            0%{
+                background-color: yellow;
+                width: 250px;
+            }
+            50%{
+                background-color: green;
+                width: 350px;
+            }
+            100%{
+                background-color: red;
+                width: 450px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">BOX</div>
+</body>
+</html>

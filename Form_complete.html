@@ -1,0 +1,100 @@
+<!-- 
+    Form: 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How_to_Create_Professional_Form</title>
+  </head>
+  <body>
+    <h2>Enquiry</h2>
+    <form action="index.php">
+    <label for="fname"><b> First Name :</b></label><br />
+    <input type="text" name="name" id="fname" autofocus required="" placeholder="First Name" maxlength="10"/><br /><br>
+    <label for="lname"><b> Last Name :</b></label><br>
+    <input type="text" name="lname" /><br /><br />
+    <label for="phnumber"><b> Phone Number :</b></label><br>
+    <input type="tel" name="phnumber" maxlength="13" /><br /><br />
+    <label for="email"><b> Email :</b></label><br />
+    <input type="email" name="email" value="ranag55db@gmail.com" readonly/><br /><br />
+    <label for="address"><b> Address :</b></label><br />
+    <input type="text" name="address" /><br /><br />
+    <label for="password"><b> Password :</b></label><br />
+    <input type="password" name="password" /><br /><br />
+    <label for="gender"><b> Gender:</b></label><br /><br />
+    <label for="male">
+      <input type="radio" name="gender" id="male" checked />Male</label
+    >
+    <label for="female">
+      <input type="radio" name="gender" id="female" />Female</label
+    ><br><br>
+    <label for="hobbies"><b> Your Hobbies:</b></label><br /><br />
+    <label for="readingBooks">
+      <input type="checkbox" name="hobbies[]" id="readingBooks" />Reading
+      Books</label
+    >
+    <label for="cricket">
+      <input type="checkbox" name="hobbies[]" id="cricket" />Cricket</label
+    >
+    <label for="writing">
+      <input type="checkbox" name="hobbies[]" id="writing" />Writing</label
+    >
+    <label for="dancing">
+      <input type="checkbox" name="hobbies[]" id="dancing" />Dancing</label
+    >
+    <label for="singing">
+      <input type="checkbox" name="hobbies[]" id="singing" />Singing</label
+    ><br><br>
+    <label for="select_your_country">Select Country:</label>
+    <select name="" id="">
+        <optgroup label="Asia">Asia
+        <option value="pakistan">Pakistan</option>
+        <option value="india">India</option>
+        <option value="bangladesh">Bangladesh</option>
+    </optgroup>
+    <optgroup label="South_Africa">
+        <option value="angola">Angola</option>
+        <option value="Botswana">Botswana</option>
+        <option value="Comoros">Comoros</option>
+    </optgroup>
+    </select><br><br>
+    <label for="age">Age 
+        <input type="number" name="age" value="age" min="20" max="35">
+    </label><br><br>
+    <label for="secret">
+        Secret <input type="hidden" name="secret" value="secret">
+    </label><br><br>
+    <label for="select_file">Select File <br><br>
+        <input type="file" name="select_file">
+    </label><br><br>
+    <label for="color">Select Your Favrouite:
+        <input type="color" name="color">
+    </label><br><br>
+    <label for="date">Date:
+        <input type="date" name="date">
+    </label><br><br>
+    <label for="datetime_local">
+        Date & Time <input type="datetime-local" name="datetime_local">
+    </label><br><br>
+    <label for="time">
+        Time <input type="time" name="time">
+    </label><br><br>
+    <label for="month">
+        Month: <input type="month" name="month">
+    </label><br><br>
+    <label for="week">
+        Week: <input type="week" name="week">
+    </label><br><br>
+    <label for="range">
+        Range: <input type="range" name="range" min="0" max="200" value="150">
+    </label><br><br>
+    <label for="submit">
+        Submit: <input type="submit" name="submit" value="Send_Me"></label><br><br> 
+        <label for="reset">Reset: <input type="reset" value="Reset_Me"></label>
+        
+        </form>
+  </body>
+</html>
